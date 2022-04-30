@@ -28,6 +28,10 @@ footer {
   padding: 25px;
 }
 
+.data {
+  margin-left: 50px;
+}
+
 .footer-title {
   display: flex;
   flex-direction: column;
@@ -57,7 +61,7 @@ footer {
 }
 
 .logoEmblem {
-  width: 10px;
+  width: 50px;
 }
 
 .item {
@@ -140,6 +144,7 @@ footer {
 
 .container-one {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #444;
@@ -157,6 +162,8 @@ footer {
 }
 
 .container-one-item {
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: white;
   padding: 10px;
@@ -225,6 +232,9 @@ p {
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
+  body{
+    margin-top: 150px;
+  }
   p {
     font-size: 16px;
   }
@@ -235,7 +245,7 @@ p {
     flex: 1;
   }
   .logoEmblem{
-    width: 15px;
+    width: 70px;
   }
   .programImages{
     height: 300px;
@@ -280,10 +290,15 @@ p {
 
 /* Desktop menu */
 @media all and (min-width: 960px) {
+  body {
+    margin-top: 200px;
+  }
   p {
     font-size: 20px;
   }
-
+  .somePadding {
+    padding: 50px;
+  }
   .menu {
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -293,7 +308,7 @@ p {
     order: 0;
   }
   .logoEmblem{
-    width: 20px;
+    width: 90px;
   }
   .programImages{
     height: 400px;
