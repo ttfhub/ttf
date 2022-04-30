@@ -199,7 +199,7 @@ footer {
 
 .programImages {
   height: 150px;
-  width: auto;
+  width: 200;
 }
 
 h3 {
@@ -221,7 +221,7 @@ h4 {
   }
   .programImages{
     height: 300px;
-    width: auto;
+    width: 350px;
   }
   .item.button {
     width: auto;
@@ -272,7 +272,6 @@ h4 {
   }
   .programImages{
     height: 400px;
-    width: auto;
   }
   .item {
     order: 1;
