@@ -57,7 +57,7 @@ footer {
 }
 
 .logoEmblem {
-  width: 20px;
+  width: 10px;
 }
 
 .item {
@@ -235,7 +235,7 @@ p {
     flex: 1;
   }
   .logoEmblem{
-    width: 25px;
+    width: 15px;
   }
   .programImages{
     height: 300px;
@@ -293,7 +293,7 @@ p {
     order: 0;
   }
   .logoEmblem{
-    width: 30px;
+    width: 20px;
   }
   .programImages{
     height: 400px;
