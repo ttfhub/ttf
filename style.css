@@ -57,7 +57,7 @@ footer {
 }
 
 .logoEmblem {
-  max-width: 50px;
+  width: 50px;
 }
 
 .item {
@@ -235,7 +235,7 @@ p {
     flex: 1;
   }
   .logoEmblem{
-    max-width: 70px;
+    width: 70px;
   }
   .programImages{
     height: 300px;
@@ -293,7 +293,7 @@ p {
     order: 0;
   }
   .logoEmblem{
-    max-width: 90px;
+    width: 90px;
   }
   .programImages{
     height: 400px;
