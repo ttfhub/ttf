@@ -55,6 +55,11 @@ footer {
   font-size: 20px;
   padding: 7.5px 10px 7.5px 0;
 }
+
+.logoEmblem {
+  max-width: 50px;
+}
+
 .item {
   padding: 10px;
 }
@@ -229,6 +234,9 @@ p {
   .logo {
     flex: 1;
   }
+  .logoEmblem{
+    max-width: 70px;
+  }
   .programImages{
     height: 300px;
     width: 200px;
@@ -283,6 +291,9 @@ p {
   }
   .logo {
     order: 0;
+  }
+  .logoEmblem{
+    max-width: 90px;
   }
   .programImages{
     height: 400px;
