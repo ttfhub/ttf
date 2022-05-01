@@ -4,7 +4,7 @@
     margin: 0;
   }
 body {
-  font-family: sans-serif;
+  font-family: "copperplate";
   font-size: 12px;
   margin-top: 125px;
 }
@@ -61,6 +61,7 @@ footer {
 }
 
 .item {
+  font-size: 16px;
   padding: 10px;
 }
 .item.button {
@@ -144,7 +145,8 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #444;
-  margin: 20px;
+  margin: 10px;
+  margin-bottom: 50px;
 }
 
 .container-one-title {
@@ -155,14 +157,29 @@ footer {
   margin-top: auto;
   margin-bottom: auto;
   padding: 10px;
+  font-weight: bold;
 }
 
 .container-one-item {
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: white;
   padding: 10px;
+}
+
+/* container-two:
+-Coaches
+-Fighters
+*/
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color:#444;
+  margin: 10px;
+  margin-bottom: 50px;
 }
 
 
@@ -175,7 +192,8 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #444;
-  margin: 20px;
+  margin: 10px;
+  margin-bottom: 50px;
 }
 
 .container-three-title {
@@ -212,13 +230,45 @@ footer {
   width: 150px;
 }
 
-h3 {
-  font-weight: bold;
+/* borderless section */
+.container-borderless {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 50px;
 }
 
-h4 {
+.container-borderless-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold
+}
+
+.container-borderless-item {
+  text-align: center;
+  color: black
+}
+
+h1 {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 p {
@@ -293,7 +343,10 @@ p {
     font-size: 20px;
   }
   .somePadding {
-    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .menu {
     align-items: flex-start;
