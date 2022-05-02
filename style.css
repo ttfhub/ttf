@@ -283,6 +283,7 @@ footer {
 /* headers and paragraphs */
 
 h1 {
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
