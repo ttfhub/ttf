@@ -237,6 +237,14 @@ footer {
   color: black
 }
 
+/* nlc Section */
+#nlcPic {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+  padding: 20px;
+}
+
 /* Coaches Slider */
 .slide {
   display: none;
