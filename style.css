@@ -306,6 +306,13 @@ p {
   padding-right: 30px;
 }
 
+/* nlc */
+#nlc {
+  background: url(images/backgrounds/nlc.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
 /* Tablet menu */
 @media all and (min-width: 700px) {
   body{
