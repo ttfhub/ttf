@@ -14,6 +14,7 @@ nav {
   background-color: black;
   padding: 0 15px;
   width:100%;
+  z-index: 1;
 }
 a {
   color: white;
@@ -130,6 +131,25 @@ footer {
 .submenu-active {
   background-color: #111;
   border-radius: 3px;
+}
+
+.landingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.landingImage {
+  max-height: fit-content;
+  padding: 50px;
+}
+
+.landingStatement {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 /* container-one:
@@ -326,6 +346,7 @@ h3 {
 p {
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
 }
 
 /* nlc */
@@ -342,6 +363,15 @@ p {
   }
   p {
     font-size: 16px;
+  }
+  .landingImage {
+    max-height: fit-content;
+    padding: 50px;
+  }
+  .landingStatement {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 50px;
   }
   .menu {
     justify-content: center;
@@ -410,6 +440,15 @@ p {
   }
   p {
     font-size: 20px;
+  }
+  .landingImage {
+    max-height: fit-content;
+    padding: 100px;
+  }
+  .landingStatement {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 50px;
   }
   .somePadding {
     padding-left: 150px;
