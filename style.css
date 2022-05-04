@@ -144,7 +144,9 @@ footer {
 
 .landingImage {
   max-height: fit-content;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
 }
 
 .landingStatement {
@@ -282,6 +284,20 @@ footer {
   margin-right: 20px;
 }
 
+.slideshowBody {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
 /* headers and paragraphs */
 
 h1 {
@@ -324,7 +340,9 @@ p {
   }
   .landingImage {
     max-height: fit-content;
-    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
   }
   .landingStatement {
     font-size: 30px;
@@ -385,6 +403,8 @@ p {
   }
 }
 
+/* slider */
+
 
 
 /* Desktop menu */
@@ -397,7 +417,8 @@ p {
   }
   .landingImage {
     max-height: fit-content;
-    padding: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
   .landingStatement {
     font-size: 30px;
