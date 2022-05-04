@@ -161,11 +161,9 @@ footer {
 
 .container-one {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #444;
-  margin: 10px;
   margin-bottom: 50px;
 }
 
@@ -174,8 +172,6 @@ footer {
   text-align: center;
   color: black;
   background-color: rgb(115, 108, 108);
-  margin-top: auto;
-  margin-bottom: auto;
   padding: 10px;
   font-weight: bold;
 }
@@ -187,51 +183,9 @@ footer {
 }
 
 
-/* container-three:
--Programs
-*/
-
-.container-three {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #444;
-  margin: 10px;
-  margin-bottom: 50px;
-}
-
-.container-three-title {
-  text-transform: uppercase;
-  text-align: center;
-  color: black;
-  background-color: rgb(115, 108, 108);
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 10px;
-}
-
-.container-three-item {
-  display:flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  margin: 10px;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .programImages {
-  height: 150px;
-  width: 150px;
+  width: 80%;
+  margin: 20px;
 }
 
 /* borderless section */
@@ -322,22 +276,22 @@ footer {
   border-left: 6px solid #66aa77;
   transform: rotate(45deg);
 }
+
+.somePadding {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 /* headers and paragraphs */
 
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-style: italic;
 }
 
 h3 {
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   font-style: italic;
@@ -364,6 +318,10 @@ p {
   p {
     font-size: 16px;
   }
+  .somePadding {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .landingImage {
     max-height: fit-content;
     padding: 50px;
@@ -381,10 +339,6 @@ p {
   }
   .logoEmblem{
     width: 70px;
-  }
-  .programImages{
-    height: 300px;
-    width: 200px;
   }
   .item.button {
     width: auto;
@@ -439,22 +393,20 @@ p {
     margin-top: 200px;
   }
   p {
-    font-size: 20px;
+    font-size: 16px;
   }
   .landingImage {
     max-height: fit-content;
-    padding: 100px;
+    padding: 200px;
   }
   .landingStatement {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
     margin-bottom: 50px;
   }
-  .somePadding {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .somePadding{
+    margin-left: 200px;
+    margin-right: 200px;
   }
   .menu {
     align-items: flex-start;
@@ -466,9 +418,6 @@ p {
   }
   .logoEmblem{
     width: 90px;
-  }
-  .programImages{
-    height: 400px;
   }
   .item {
     order: 1;
