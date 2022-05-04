@@ -48,6 +48,43 @@ for (let item of items) {
 document.addEventListener("click", closeSubmenu, false);
 
 /* Coaches slider */
+
+var slideIndex = 1;
+var slideInfoIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide(x) {
+  showSlides(slideIndex += x, slideInfoIndex += x);
+}
+
+function currentSlide(x) {
+  showSlides(slideIndex = x, slideInfoIndex += x);
+}
+
+function showSlides(x, y) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var slideInfos = document.getElementsByClassName("slideInfo");
+  if (x > slides.length) {
+      slideIndex = 1;
+      slideInfoIndex = 1;
+    }    
+  if (x < 1) {
+      slideIndex = slides.length;
+      slideInfoIndex = slideInfos.length;
+    }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+      slideInfos[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "inline";  
+  slideInfos[slideInfoIndex-1].style.display = "inline";  
+}
+
+
+
+
+/*
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -76,5 +113,5 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "flex";  
-  dots[slideIndex-1].className += " active";
 }
+*/
