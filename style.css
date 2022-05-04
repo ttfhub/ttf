@@ -248,6 +248,9 @@ footer {
 /* Coaches Slider */
 .slide {
   display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .plant-carousel {
   position: relative;
@@ -260,13 +263,24 @@ footer {
   min-height: 20em;
   overflow: hidden;
 }
-.plant-1, .plant-2, .plant-3 { 
+.plant { 
   width: 100px;
   height: 150px;
   border: 2px solid greenyellow;
   background-attachment: fixed;
   background-position: center center;
 }
+.info-carousel {
+  position: relative; 
+  overflow: hidden;
+  text-align: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .prev, .next {
   position: absolute;
   display: flex;
@@ -444,9 +458,9 @@ p {
     height: 250px;
   }
   .next{
-    right: 250px;
+    right: 300px;
   }
   .prev {
-    left: 250px;
+    left: 300px;
   }
 }
