@@ -24,6 +24,7 @@ a {
 footer {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: black;
   justify-content: center;
   padding: 25px;
