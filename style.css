@@ -155,6 +155,14 @@ footer {
   font-weight: bolder;
 }
 
+.white-shadow {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.black-shadow {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 /* container-one:
 -About
 -Calendar
