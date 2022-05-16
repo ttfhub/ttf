@@ -21,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+hr {
+  border: 1px solid black;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -343,6 +349,10 @@ p {
   p {
     font-size: 16px;
   }
+  hr {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
   .somePadding {
     padding-left: 50px;
     padding-right: 50px;
@@ -423,6 +433,10 @@ p {
   }
   p {
     font-size: 16px;
+  }
+  hr {
+    margin-left: 300px;
+    margin-right: 300px;
   }
   .landingImage {
     max-height: fit-content;
