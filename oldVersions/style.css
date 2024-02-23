@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    font-family: "copperplate";
+    margin-top: 200px;
+    display: flex;
+    flex-direction: collumn;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: stretch;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: stretch;
+}
+
+.container-column-item {
+    max-width: auto;
+}
+
+/* Phone */
+
+/* - Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    padding: 0 15px;
+    width:100%;
+    z-index: 1;
+    opacity: .8;
+}
+
+hr {
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.logo {
+    padding: 7.5px 10px 7.5px 0;
+    max-width: 15%;
+}
+
+/* Navbar - menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+    color: white;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 30px;
+}
+  
+.item.button {
+    order: 2;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+    font-size: 30px;
+    color: white;
+}
+  
+.button.secondary {
+    /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+}
+  
+/* Submenu up from mobile screens */
+  
+.submenu {
+    display: none;
+
+}
+.submenu-active .submenu {
+    display: block;
+}
+  
+.has-submenu i {
+    font-size: 12px;
+}
+
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+}
+
+.subitem a {
+    padding: 10px 15px;
+}
+
+.submenu-active {
+    background-color: #111;
+    border-radius: 3px;
+}
+
+/* - Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+    padding: 25px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 450px;
+    margin-top: auto;
+    text-align: center;
+    min-height: 450px;
+}
+  
+.footer-title {
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+  
+.footer-item {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+  
+.footer-item-specifics {
+    margin: 30px;
+}
+
+.menu, .submenu {
+  list-style-type: none;
+}
+
+.item {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.item.button {
+  padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,.item a:hover::after {
+  color: #ccc;
+}
+
+
+
+
+
+/* Tablet */
+@media all and (min-width: 700px) {
+
+    body{
+        margin-top: 200px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+        order: 0;
+        padding: 7.5px 10px 7.5px 0;
+        max-width: 15%;
+    }
+
+    .item .button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+
+    /* Button up from tablet screen */
+
+    .menu li .button a {
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+
+    .button a {
+        background: white;
+        border: 1px green;
+    }
+
+    .button .secondary {
+        border: 0;
+    }
+
+    .button .secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        text-decoration: none;
+    }
+
+    .button:not(.secondary) a:hover {
+        background: green;
+        border-color: black;
+    }
+
+    .plant-1, .plant-2, .plant-3 {
+        width: 150px;
+        height: 200px;
+    }
+
+}
+
+
+
+/* Desktop*/
+@media all and (min-width: 960px) {
+    body {
+        margin-top: 200px;
+    }
+
+    /* - Navbar */
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+        margin-right: 15px;
+    }
+
+    .logo {
+        order: 0;
+        padding: 7.5px 10px 7.5px 0;
+        max-width: 15%;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+        font-size: 30px;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .submenu-active .submenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 68px;
+        background: #111;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .submenu-active {
+        border-radius: 0;
+    }
+
+    .plant-1, .plant-2, .plant-3 {
+        width: 200px;
+        height: 250px;
+    }
+
+}
